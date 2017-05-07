@@ -1,0 +1,6 @@
+/lib/
+/dist/
+/.babel.json
+/node_modules/
+/.env
+/.yarnclean

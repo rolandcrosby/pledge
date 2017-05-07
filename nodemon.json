@@ -1,0 +1,14 @@
+{
+  "ignore": [
+      "lib",
+      "dist",
+      ".babel.json"
+  ],
+  "env": {
+      "PORT": "3000"
+  },
+  "ext": "js jsx json",
+  "events": {
+      "restart": "echo ---- $FILENAME"
+  }
+}

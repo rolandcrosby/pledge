@@ -1,0 +1,41 @@
+{
+  "name": "pledge",
+  "version": "0.0.1",
+  "description": "collect pledges at an event via SMS",
+  "repository": "https://github.com/rolandcrosby/pledge",
+  "license": "MIT",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "rm -rf lib dist && babel src -d lib && webpack --display-modules && PORT=3000 node lib/server",
+    "clean": "rm -rf lib dist .babel.json",
+    "dev:start": "nodemon --exec webpack \\&\\& babel-node src/server"
+  },
+  "dependencies": {
+    "aphrodite": "^1.2.1",
+    "async-lock": "^0.3.9",
+    "auth0-lock": "^10.15.1",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "firebase": "^3.9.0",
+    "firebase-admin": "^4.2.1",
+    "jquery": "^3.2.1",
+    "nodemon": "^1.11.0",
+    "preact": "^8.1.0",
+    "preact-helmet": "https://github.com/rolandcrosby/preact-helmet/tarball/4cfaafc5d46e888bfa91aaca5040b46a41bae49e",
+    "preact-redux": "^2.0.1",
+    "preact-render-to-string": "^3.6.1",
+    "preact-router": "^2.5.1",
+    "redux": "^3.6.0",
+    "twilio": "^2.11.1",
+    "webpack": "^2.4.1"
+  },
+  "engines": {
+    "node": "6.9.x"
+  }
+}
